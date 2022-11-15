@@ -29,6 +29,7 @@ In a nutshell here's how to use this template, so for example assume you want to
 │      ├─bicycle
 │      └─pedestrian
 ├─models
+├─notebooks
 └─src
     ├─data
     ├─features
