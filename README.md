@@ -1,7 +1,11 @@
 # Self-Driving-Related-Images-Classfification---From-MLP-To-Pretrained-ResNet
 This image classification task uses deep learning models, from basic MLP to unpretrained ResNet to pretrained ResNet, which is an overall process covering data collection to model training.  
 
-We can see that unpretrained ResNet performs badly on a such small dataset, and its accuracy is almost 35%, which nearly equals the rate at which we randomly guess the image class. On the contrary, pretrained ResNet performs pretty well, and its accuracy got 93% even with only around 9000 training data. It shows the power of transfer learning on a small dataset on a computer vision task.  
+
+**Our Findings and Thoughts**
+* MLP has a low accuracy. And it can be deduced that it is maybe because MLP does not have a translation or rotational invariance.
+* Unpretrained ResNet has a higher accuracy limit than MLP. However, it takes too many epochs to train it without pretrained CNN layers. Within 10 epochs, the max training accuracy and the max test accuracy are no more than 70 %, which is relatively slow. We can see that unpretrained ResNet performs badly on a such small dataset, also it is time-consuming.
+* The pretrained CNN model shows a very satisfying result. Within 10 epochs, both training accuracy and test accuracy reach more than 90% and are almost converged. It shows the power of transfer learning on such a small dataset in computer vision tasks.
 
 I hope you find this helpful!
 
